@@ -1,0 +1,73 @@
+.timmana {
+  font-family: "Timmana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1 {
+  color: aqua;
+  font-size: 3rem;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+h2 {
+  color: dodgerblue;
+  font-size: 2rem;
+  padding: 20px;
+}
+h3 {
+  color: rgb(255, 134, 90);
+}
+
+p {
+  color: rgb(162, 45, 230);
+}
+/* h1 {
+    color: brown;
+}
+h2 {
+    color: blue;
+} */
+.my-class {
+  color: "#8147EF";
+}
+#my-id {
+  color: grey;
+}
+
+ {
+}
+p strong {
+  color: rgb(255, 91, 119);
+}
+h1 strong {
+  color: rgb(255, 91, 119);
+}
+p span strong {
+  color: coral;
+}
+/* This is a comment */
+article {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border: 20px solid palevioletred;
+  padding: 10px;
+}
+
+p {
+  border: 10px dashed rgb(255, 177, 213);
+  padding: 20px;
+  line-height: 1.5;
+  background-color: rgb(221, 200, 244);
+}
+a:hover {
+  color: coral;
+}
