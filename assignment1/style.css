@@ -1,24 +1,93 @@
 body {
-  background-image: linear-gradient(
-    to right top,
-    #d16ba5,
-    #c777b9,
-    #ba83ca,
-    #aa8fd8,
-    #9a9ae1,
-    #8aa7ec,
-    #79b3f4,
-    #69bff8,
-    #52cffe,
-    #41dfff,
-    #46eefa,
-    #5ffbf1
-  );
+  background-color: #1d160f;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* color: #e5e5cb; */
+  color: #ffffff;
+  font-size: 1.1rem;
 }
-.toptitle {color: rgb(68, 36, 98);padding: 20px;}
+
+.toptitle {
+  color: rgb(125, 70, 176);
+  padding: 20px;
+}
 article {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  border: 20px solid palevioletred;
+  /* border: 20px solid palevioletred;
+  padding: 10px; */
+}
+.boxes {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
   padding: 10px;
+  line-height: 120px;
+}
+
+#grid-container {
+  border: 2px dashed #e5e5cb;
+  margin: 50px 0;
+  width: 500px;
+  min-height: 500px;
+  padding: 10px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#grid-container > * {
+  width: 100%;
+  height: 100%;
+}
+#box1 {
+  background-color: limegreen;
+  grid-column: 1/4;
+  grid-row: 1/3;
+}
+#box2 {
+  background-color: purple;
+}
+#box3 {
+  background-color: aquamarine;
+}
+#box4 {
+  background-color: coral;
+}
+#box5 {
+  background-color: yellow;
+}
+#box6 {
+  background-color: hotpink;
+  grid-column: 1/4;
+}
+#box7 {
+  background-color: hotpink;
+}
+#box8 {
+  background-color: hotpink;
+}
+#box9 {
+  background-color: hotpink;
+}
+#box10 {
+  background-color: hotpink;
+}
+#box11 {
+  background-color: hotpink;
+}
+#box12 {
+  background-color: hotpink;
+}
+#box13 {
+  background-color: hotpink;
+}
