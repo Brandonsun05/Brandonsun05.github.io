@@ -1,0 +1,23 @@
+body {
+  background-image: linear-gradient(
+    to top,
+    #ea7eb3,
+    #f079a2,
+    #f37690,
+    #f3747e,
+    #f0756c
+  );
+  display: flex;
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* color: #e5e5cb; */
+  color: #ffd8f8;
+  font-size: 1.1rem;
+}
