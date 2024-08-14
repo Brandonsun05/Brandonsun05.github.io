@@ -354,6 +354,13 @@ article {
   text-align: center;
   padding: 40px;
 }
-#boxq12small {
+#boxq13small {
   background-color: #ffc1bf;
+}
+#boxq13big {
+  width: 500px;
+  background-color: #ffdad0;
+  grid-row: 1/4;
+  text-align: center;
+  padding: 40px;
 }
