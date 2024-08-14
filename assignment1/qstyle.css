@@ -7,17 +7,131 @@ body {
     #f3747e,
     #f0756c
   );
+  .chakra-petch-light {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .chakra-petch-regular {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .chakra-petch-medium {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .chakra-petch-semibold {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .chakra-petch-bold {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .chakra-petch-light-italic {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .chakra-petch-regular-italic {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .chakra-petch-medium-italic {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  .chakra-petch-semibold-italic {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .chakra-petch-bold-italic {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
   display: flex;
   text-align: center;
   margin: auto;
   max-width: 1000px;
   justify-content: center;
   align-items: center;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   /* color: #e5e5cb; */
-  color: #ffd8f8;
+  color: #594f58;
   font-size: 1.1rem;
 }
+.toptitle {
+  color: #594f58;
+  padding: 20px;
+  font-family: "Chakra Petch", sans-serif;
+}
+article {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Chakra Petch", sans-serif;
+  /* border: 20px solid palevioletred;
+  padding: 10px; */
+}
+.boxes {
+  color: #594f58;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  /* line-height: 120px; */
+}
+
+#grid-container {
+  border: 5px dashed #ffd8f8;
+  margin: 50px 0;
+  width: 856px;
+  min-height: 420px;
+  padding: 10px;
+  display: grid;
+  gap: 1rem;
+  /* grid-template-columns: 1fr ; */
+  grid-template-rows: 1fr;
+}
+#grid-container > * {
+  width: 100%;
+  height: 100%;
+}
+#box1:hover {
+  background-color: #ebbc00;
+  transition: background-color 0.3s, color 0.3s;
+}
+#box2:hover {
+  background-color: #e7c100;
+  transition: background-color 0.3s, color 0.3s;
+}
+.boxes {
+  align-items: center;
+}
+#box1 {
+  background-color: #ffc1bf;
+  /* grid-column: 1/4; */
+}
+/* #box1 {
+  background-color: #810810;
+  grid-column: 1/4;
+} */
+#box2 {
+  background-color: #ffdad0;
+  grid-row: 1/4;
+  text-align: center;
+  padding: 80px;
+}
+list-style-position 

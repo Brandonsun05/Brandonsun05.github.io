@@ -57,3 +57,7 @@ body {
 #box6 {
   background-color: hotpink;
 }
+div {
+  text-align: center;
+  align-items: center;
+}

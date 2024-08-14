@@ -7,33 +7,87 @@ body {
     #f3747e,
     #f0756c
   );
+  .chakra-petch-light {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .chakra-petch-regular {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .chakra-petch-medium {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .chakra-petch-semibold {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .chakra-petch-bold {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .chakra-petch-light-italic {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .chakra-petch-regular-italic {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .chakra-petch-medium-italic {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  .chakra-petch-semibold-italic {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .chakra-petch-bold-italic {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
   display: flex;
   text-align: center;
   margin: auto;
   max-width: 1000px;
   justify-content: center;
   align-items: center;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   /* color: #e5e5cb; */
-  color: #ffd8f8;
+  color: #594f58;
   font-size: 1.1rem;
 }
 .toptitle {
-  color: #ffd8f8;
+  color: #594f58;
   padding: 20px;
+  font-family: "Chakra Petch", sans-serif;
 }
 article {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
+  font-family: "Chakra Petch", sans-serif;
+  justify-content: center;
+
   /* border: 20px solid palevioletred;
   padding: 10px; */
 }
 .boxes {
-  color: #811c31;
+  color: #594f58;
   text-align: center;
   align-items: center;
   font-weight: bold;
@@ -58,49 +112,63 @@ article {
   height: 100%;
 }
 #box1:hover {
-  background-color: #4c2324;
+  background-color: #ebbc00;
+  transition: background-color 0.3s, color 0.3s;
 }
 #box2:hover {
-  background-color: #5e1d1f;
+  background-color: #e7c100;
+  transition: background-color 0.3s, color 0.3s;
 }
 #box3:hover {
-  background-color: #6f1116;
+  background-color: #e3c800;
+  transition: background-color 0.3s, color 0.3s;
 }
 #box4:hover {
-  background-color: #810810;
+  background-color: #dfce00;
+  transition: background-color 0.3s, color 0.3s;
 }
 #box5:hover {
-  background-color: #7a070e;
+  background-color: #dbcf00;
+  transition: background-color 0.3s, color 0.3s;
 }
 #box6:hover {
-  background-color: #72060c;
+  background-color: #d7cf00;
+  transition: background-color 0.3s, color 0.3s;
 }
 #box7:hover {
-  background-color: #6b050a;
+  background-color: #d3ce00;
+  transition: background-color 0.3s, color 0.3s;
 }
 #box8:hover {
-  background-color: #630408;
+  background-color: #cecc00;
+  transition: background-color 0.3s, color 0.3s;
 }
 #box9:hover {
-  background-color: #5b0306;
+  background-color: #c8c800;
+  transition: background-color 0.3s, color 0.3s;
 }
 #box10:hover {
-  background-color: #520205;
+  background-color: #bfc200;
+  transition: background-color 0.3s, color 0.3s;
 }
 #box11:hover {
-  background-color: #490104;
+  background-color: #b4b900;
+  transition: background-color 0.3s, color 0.3s;
 }
 #box12:hover {
-  background-color: #3e0102;
+  background-color: #a4ab00;
+  transition: background-color 0.3s, color 0.3s;
 }
 #box13:hover {
-  background-color: #2e0001;
+  background-color: #858d00;
+  transition: background-color 0.3s, color 0.3s;
 }
+
 .boxes {
   align-items: center;
 }
 #box1 {
-  background-color: #fb0f21;
+  background-color: #ffc1bf;
   grid-column: 1/4;
 }
 /* #box1 {
@@ -108,38 +176,38 @@ article {
   grid-column: 1/4;
 } */
 #box2 {
-  background-color: #ffd8f8;
+  background-color: #ffdad0;
 }
 #box3 {
-  background-color: #ffd8f8;
+  background-color: #ffe0cd;
 }
 #box4 {
-  background-color: #ffd8f8;
+  background-color: #ffdfc0;
 }
 #box5 {
-  background-color: #ffd8f8;
+  background-color: #ffdbaf;
 }
 #box6 {
-  background-color: #ffd8f8;
+  background-color: #ffd59b;
 }
 #box7 {
-  background-color: #ffd8f8;
+  background-color: #ffcf87;
 }
 #box8 {
-  background-color: #ffd8f8;
+  background-color: #ffc973;
 }
 #box9 {
-  background-color: #ffd8f8;
+  background-color: #ffc360;
 }
 #box10 {
-  background-color: #ffd8f8;
+  background-color: #ffbe4e;
 }
 #box11 {
-  background-color: #ffd8f8;
+  background-color: #ffba3c;
 }
 #box12 {
-  background-color: #ffd8f8;
+  background-color: #ffb62b;
 }
 #box13 {
-  background-color: #ffd8f8;
+  background-color: #ffb41c;
 }
