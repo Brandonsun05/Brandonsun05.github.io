@@ -9,7 +9,16 @@
   font-weight: bold;
   font-style: normal;
 }
-body {background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);}
+body {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}
 h1 {
   color: aqua;
   font-size: 3rem;
@@ -18,9 +27,9 @@ h1 {
   font-weight: bold;
 }
 h2 {
-  color: #517FED
-  font-size: 2rem;
-  padding: 20px;
+  color: #517fed;
+  /* font-size: 2rem; */
+  /* padding: 20px; */
 }
 h3 {
   color: rgb(255, 134, 90);
@@ -42,8 +51,6 @@ h2 {
   color: grey;
 }
 
-{
-}
 p strong {
   color: rgb(255, 91, 119);
 }
