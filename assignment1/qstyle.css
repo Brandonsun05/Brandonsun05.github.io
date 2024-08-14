@@ -7,6 +7,7 @@ body {
     #f3747e,
     #f0756c
   );
+  /* Gradient colour background from Colourspace */
   .chakra-petch-light {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 300;
@@ -57,6 +58,7 @@ body {
     font-weight: 700;
     font-style: italic;
   }
+  /* Google fonts */
   display: flex;
   text-align: center;
   margin: auto;
@@ -67,9 +69,12 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  /* color: #e5e5cb; */
   color: #594f58;
   font-size: 1.1rem;
+}
+li {
+  font-weight: bold;
+  font-size: 20px;
 }
 .toptitle {
   color: #594f58;
@@ -81,8 +86,6 @@ article {
   font-weight: bold;
   font-size: 20px;
   font-family: "Chakra Petch", sans-serif;
-  /* border: 20px solid palevioletred;
-  padding: 10px; */
 }
 .boxes {
   color: #594f58;
@@ -91,28 +94,12 @@ article {
   font-weight: bold;
   font-size: 20px;
   padding: 10px;
-  /* line-height: 120px; */
 }
-/* .boxes {
-  color: #594f58;
-  text-align: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 20px; */
-/* padding: 10px; */
-/* min-width: 220px; */
-/* margin: 20px; */
-/* height: 100%;
-  width: 100%; */
-/* line-height: 120px; */
-/* } */
-
 #grid-container {
   border: 5px dashed #ffd8f8;
   margin: 50px 0;
   width: 800px;
   min-height: 420px;
-  /* height: 420px; */
   padding: 10px;
   display: grid;
   gap: 1rem;
@@ -131,10 +118,6 @@ article {
   background-color: #ebbc00;
   transition: background-color 0.3s, color 0.3s;
 }
-/* #boxq1small:hover {
-  background-color: #e7c100;
-  transition: background-color 0.3s, color 0.3s;
-} */
 #boxq2big:hover {
   background-color: #e7c100;
   transition: background-color 0.3s, color 0.3s;
@@ -144,113 +127,104 @@ article {
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq3small:hover {
-  background-color: #e7c100;
+  background-color: #e3c800;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq3big:hover {
-  background-color: #e7c100;
+  background-color: #e3c800;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq4small:hover {
-  background-color: #e7c100;
+  background-color: #dfce00;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq4big:hover {
-  background-color: #e7c100;
+  background-color: #dfce00;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq5small:hover {
-  background-color: #e7c100;
+  background-color: #dbcf00;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq5big:hover {
-  background-color: #e7c100;
+  background-color: #dbcf00;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq6small:hover {
-  background-color: #e7c100;
+  background-color: #d7cf00;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq6big:hover {
-  background-color: #e7c100;
+  background-color: #d7cf00;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq7small:hover {
-  background-color: #e7c100;
+  background-color: #d3ce00;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq7big:hover {
-  background-color: #e7c100;
+  background-color: #d3ce00;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq8small:hover {
-  background-color: #e7c100;
+  background-color: #cecc00;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq8big:hover {
-  background-color: #e7c100;
+  background-color: #cecc00;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq9small:hover {
-  background-color: #e7c100;
+  background-color: #c8c800;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq9big:hover {
-  background-color: #e7c100;
+  background-color: #c8c800;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq10small:hover {
-  background-color: #e7c100;
+  background-color: #bfc200;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq10big:hover {
-  background-color: #e7c100;
+  background-color: #bfc200;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq11small:hover {
-  background-color: #e7c100;
+  background-color: #b4b900;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq11large:hover {
-  background-color: #e7c100;
+  background-color: #b4b900;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq12small:hover {
-  background-color: #e7c100;
+  background-color: #a4ab00;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq12large:hover {
-  background-color: #e7c100;
+  background-color: #a4ab00;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq13small:hover {
-  background-color: #e7c100;
+  background-color: #858d00;
   transition: background-color 0.3s, color 0.3s;
 }
 #boxq13large:hover {
-  background-color: #e7c100;
+  background-color: #858d00;
   transition: background-color 0.3s, color 0.3s;
 }
-/* .boxes {
-  width: 300px;
-  margin: 10px;
-} */
 #boxq1small {
   background-color: #ffc1bf;
-  /* grid-column: 1/4; */
 }
-/* #box1 {
-  background-color: #810810;
-  grid-column: 1/4;
-} */
 #boxq1big {
-  background-color: #ffdad0;
+  background-color: #ffc1bf;
   grid-row: 1/4;
   text-align: center;
   padding: 80px;
 }
 #boxq2small {
-  background-color: #ffc1bf;
+  background-color: #ffdad0;
 }
 #boxq2big {
   background-color: #ffdad0;
@@ -259,108 +233,110 @@ article {
   padding: 120px;
 }
 #boxq3small {
-  background-color: #ffc1bf;
+  background-color: #ffe0cd;
 }
 #boxq3big {
-  background-color: #ffdad0;
+  background-color: #ffe0cd;
   grid-row: 1/4;
   text-align: center;
   padding: 120px;
 }
 #boxq4small {
-  background-color: #ffc1bf;
+  background-color: #ffdfc0;
 }
 #boxq4big {
-  background-color: #ffdad0;
+  background-color: #ffdfc0;
   grid-row: 1/4;
   text-align: center;
   padding: 120px;
 }
 #boxq5small {
-  background-color: #ffc1bf;
+  background-color: #ffdbaf;
 }
 #boxq5big {
-  background-color: #ffdad0;
+  background-color: #ffdbaf;
   grid-row: 1/4;
   text-align: center;
   padding: 60px;
 }
 #boxq6small {
-  background-color: #ffc1bf;
+  background-color: #ffd59b;
 }
 #boxq6big {
-  background-color: #ffdad0;
+  background-color: #ffd59b;
   grid-row: 1/4;
   text-align: center;
   padding: 60px;
 }
 #boxq7small {
-  background-color: #ffc1bf;
+  background-color: #ffcf87;
 }
 #boxq7big {
   width: 500px;
-  background-color: #ffdad0;
+  background-color: #ffcf87;
   grid-row: 1/4;
   text-align: center;
   padding: 40px;
 }
 #boxq8small {
-  background-color: #ffc1bf;
+  background-color: #ffc973;
 }
 #boxq8big {
   width: 500px;
-  background-color: #ffdad0;
+  background-color: #ffc973;
   grid-row: 1/4;
   text-align: center;
   padding: 40px;
 }
 #boxq9small {
-  background-color: #ffc1bf;
+  background-color: #ffc360;
 }
 #boxq9big {
   width: 500px;
-  background-color: #ffdad0;
+  background-color: #ffc360;
   grid-row: 1/4;
   text-align: center;
   padding: 40px;
 }
 #boxq10small {
-  background-color: #ffc1bf;
+  background-color: #ffbe4e;
 }
 #boxq10big {
   width: 500px;
-  background-color: #ffdad0;
+  background-color: #ffbe4e;
   grid-row: 1/4;
   text-align: center;
   padding: 40px;
 }
 #boxq11small {
-  background-color: #ffc1bf;
+  background-color: #ffba3c;
 }
 #boxq11big {
   width: 500px;
-  background-color: #ffdad0;
+  background-color: #ffba3c;
   grid-row: 1/4;
   text-align: center;
   padding: 40px;
 }
 #boxq12small {
-  background-color: #ffc1bf;
+  background-color: #ffb62b;
 }
 #boxq12big {
   width: 500px;
-  background-color: #ffdad0;
+  background-color: #ffb62b;
   grid-row: 1/4;
   text-align: center;
   padding: 40px;
 }
 #boxq13small {
-  background-color: #ffc1bf;
+  background-color: #ffb41c;
 }
 #boxq13big {
   width: 500px;
-  background-color: #ffdad0;
+  background-color: #ffb41c;
   grid-row: 1/4;
   text-align: center;
   padding: 40px;
 }
+/* This CSS page is for all subpage styling and links to all the question subpages. I wanted to correspond the colour on my main page and subpage, so I added id and classes to edit the colours individually, copying HEX codes from the main page CSS style sheet.*/
+/* This section also alters the size of the boxes and their alignment using padding, justify content, align, while also adding hover to achieve visual feedback. */

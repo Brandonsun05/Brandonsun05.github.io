@@ -67,7 +67,6 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  /* color: #e5e5cb; */
   color: #594f58;
   font-size: 1.1rem;
 }
@@ -81,8 +80,14 @@ article {
   font-weight: bold;
   font-size: 20px;
   font-family: "Chakra Petch", sans-serif;
-  /* border: 20px solid palevioletred;
-  padding: 10px; */
+}
+.website {
+  font-family: "Chakra Petch";
+  color: #782e71;
+  font-size: 15px;
+}
+a:hover {
+  color: #352a33;
 }
 .boxes {
   color: #594f58;
@@ -161,18 +166,10 @@ article {
   background-color: #858d00;
   transition: background-color 0.3s, color 0.3s;
 }
-
-/* .boxes {
-  align-items: center;
-} */
 #box1 {
   background-color: #ffc1bf;
   grid-column: 1/4;
 }
-/* #box1 {
-  background-color: #810810;
-  grid-column: 1/4;
-} */
 #box2 {
   background-color: #ffdad0;
 }
@@ -209,3 +206,4 @@ article {
 #box13 {
   background-color: #ffb41c;
 }
+/* For this css code, I wanted to have a visual feedback once the user navigates the cursor onto a box. This is done using hover, while in here I was able to alter the colours of the boxes as I gave them all individual IDs. This enables me to create a colour gradient using the HEX code on Colourbox and Adobecolour and apply them individually to each id.*/
