@@ -162,9 +162,9 @@ article {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.boxes {
+/* .boxes {
   align-items: center;
-}
+} */
 #box1 {
   background-color: #ffc1bf;
   grid-column: 1/4;
