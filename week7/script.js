@@ -65,4 +65,6 @@ function dropMe() {
   boxContainer.classList.add("drop");
 }
 
-function pickMe() {}
+function pickMe() {
+  boxContainer.classList.remove("drop");
+}
