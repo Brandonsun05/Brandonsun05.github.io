@@ -118,3 +118,42 @@ footer {
   padding: 10px 0;
   width: 100%;
 }
+
+#box1 {
+  background-color: limegreen;
+}
+#box2 {
+  background-color: plum;
+}
+#box3 {
+  background-color: aquamarine;
+}
+#box4 {
+  background-color: coral;
+}
+#box5 {
+  background-color: yellow;
+}
+#box6 {
+  background-color: hotpink;
+}
+
+#grid-container {
+  border: 2px dashed #e5e5cb;
+  margin: 50px 0;
+  padding: 10px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+h1 {
+  font-weight: 800;
+  font-size: 1.6rem;
+  padding: 10px;
+  border-bottom: 1px solid #3c2a21;
+}
+
+p {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
