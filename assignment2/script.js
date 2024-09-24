@@ -14,7 +14,7 @@ function togglePlayPause() {
     playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
   } else {
     video.pause();
-    body.style.backgroundColor = "#8D4FA5";
+    body.style.backgroundColor = "white";
     playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
   }
 }
