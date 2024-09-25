@@ -1,3 +1,9 @@
+/* For the choice of styling, I aimed for a simplistic style that spotlights the media player. The background is white. This is intentionally made so that later in JavaScript when the user plays the video, the background will turn black to provide a more immersive experience. 
+
+I altered the layout so that the controls and videos are all present the moment the user opens the webpage by altering the padding and icon size. At a glance, the viewer is able to instantly retrieve key interactions and design elements for easy and intuitive interactions. 
+
+Additionally, icons change in size when the viewer hovers, indicating an interactable element to guide the viewer in what elements are interactive. */
+
 :root {
   --primary-bg-color: #f4f4f4;
   --text-color: #000000;
@@ -15,7 +21,7 @@ ul {
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Archivo Black", sans-serif;
   background-color: var(--primary-bg-color);
   color: var(--text-color);
   line-height: 1.6;
@@ -38,42 +44,30 @@ body {
 header {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
-  padding: 10px 0;
+  padding: 25px 0;
   text-align: center;
   width: 100%;
-}
-
-/* Navigation styling */
-nav {
-  margin-top: 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--text-color);
+  font-size: 25px;
 }
 
 /* Media player styling */
 .media-player {
   width: 100%;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .media-player video {
   max-width: 100%;
+  cursor: pointer;
 }
-
+.video-controls,
+.timeline {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  /* align-items: center; */
+}
 .custom-controls {
   display: flex;
   justify-content: space-between;
@@ -82,7 +76,7 @@ nav a {
   margin-top: 10px;
   width: 100%;
 }
-
+/* For controls button, I added a border radius to distinguish between the video and the controls. In addition, I also added scale change in the icons upon mouse hover so that it provides the user with visual feedback indicating that the button can be interacted.*/
 .custom-controls button {
   background-color: var(--main-btn-bg-color);
   color: var(--main-text-color);
@@ -92,6 +86,10 @@ nav a {
   font-size: 16px;
   display: flex;
   align-items: center;
+  border-radius: 5px;
+}
+button:hover {
+  scale: 0.9;
 }
 
 .progress-bar {
@@ -108,6 +106,7 @@ nav a {
   background-color: var(--main-bg-color);
   width: 0;
   transition: width 0.3s ease;
+  overflow: hidden;
 }
 
 /* Footer styling */
@@ -115,6 +114,7 @@ footer {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
   text-align: center;
+  font-size: 10px;
   padding: 10px 0;
   width: 100%;
 }
