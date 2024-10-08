@@ -108,7 +108,7 @@ let draggedElement = null;
 purpleBox.addEventListener("dragstart", startDrag);
 function startDrag() {
   console.log("dragging has started");
-  draggedElemen = purpleBox;
+  draggedElement = purpleBox;
 }
 
 dropBox.addEventListener("dragover", endDrag);
