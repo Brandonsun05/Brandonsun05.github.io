@@ -19,10 +19,15 @@ console.log(profileButton);
 
 const profileContent = document.querySelector("#profile-content");
 console.log(profileContent);
-profileButton.addEventListener("click", toggleMenu);
+profileButton.addEventListener("mouseover", toggleMenuOn);
+profileButton.addEventListener("mouseout", toggleMenuOff);
 
-function toggleMenu() {
+function toggleMenuOn() {
   profileContent.classList.toggle("show");
+}
+
+function toggleMenuOff() {
+  profileContent.classList.toggle("hide");
 }
 
 //---------------------------------------
