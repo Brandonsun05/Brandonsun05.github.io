@@ -16,3 +16,22 @@ function openDrawer() {
     isOpen = false;
   }
 }
+
+let currentIndex = 0;
+const images = document.querySelectorAll(".image-container img");
+
+function showNextImage() {
+  // 移除当前图片的 active 类
+  images[currentIndex].classList.remove("active");
+
+  // 更新索引
+  currentIndex = (currentIndex + 1) % images.length;
+
+  // 为新的图片添加 active 类
+  images[currentIndex].classList.add("active");
+}
+
+// 添加点击事件
+document
+  .querySelector(".image-container")
+  .addEventListener("click", showNextImage);

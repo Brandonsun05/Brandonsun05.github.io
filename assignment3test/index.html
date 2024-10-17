@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS animations</title>
+  <title>Assignment 3</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -14,16 +14,42 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="outer">
-    <button id="drawer-button">click me</button>
+  <div>
+    <button id="drawer-button">
+      <img
+        id="side-bar"
+        src="icons8-menu-50.png"
+        alt="Side Bar"
+        width="24"
+        height="24"
+      />
+    </button>
   </div>
   <div id="side-drawer">
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <ul>
+      <li id="Home">Home</li>
+      <li id="Contacts">Contacts</li>
+      <li id="Others">See other albums</li>
+      <li id="About-me">About Me</li>
+    </ul>
+  </div>
+  <div class="outer">
+    <img id="cloud" src="cloud.png" />
+  </div>
+
+  <div id="left">
+    <button id="left-arrow">
+      <img
+        src="https://img.icons8.com/?size=100&id=WuQrje6aA7DV&format=png&color=000000"
+        alt="Left Arrow"
+      />
+    </button>
+    </div>
+    <button id="right-arrow">
+      <img
+        src="https://img.icons8.com/?size=100&id=3we6QhkgvXBB&format=png&color=000000"
+        alt="Right Arrow"
+      />
+    </button>
   </div>
 </body>

@@ -1,24 +1,25 @@
 /* https://colorhunt.co/palette/1a120b3c2a21d5cea3e5e5cb */
 
 body {
-  background-color: #1a120b;
+  background-color: rgb(33, 51, 59);
   display: flex;
   text-align: center;
-  margin: auto;
+  margin: 60px;
   max-width: 1000px;
-  justify-content: center;
-  align-items: center;
+  align-items: baseline;
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   color: #e5e5cb;
-  /* color: #3c2a21; */
   font-size: 1.1rem;
   gap: 1.5rem;
+  justify-content: left;
 }
 
 .outer {
+  margin-left: 500px;
+  position: absolute;
   border: 2px dashed #e5e5cb7a;
   width: 400px;
   min-height: 200px;
@@ -29,90 +30,40 @@ body {
   align-items: center;
   gap: 2rem;
   opacity: 1;
-  /* background-color: cornsilk; */
   transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease;
 }
+/* .outer {
+  border: 5px dashed black;
+  align-items: baseline;
+  width: 200px;
+} */
 
 button {
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: 1.3rem;
   border-radius: 12px;
-  /* border-width: 0; */
   cursor: pointer;
+  justify-content: left;
   background-color: transparent;
   border-color: coral;
   color: #e5e5cb;
+  position: absolute;
+  z-index: 1;
   transition: border-color 0.8s ease scale 0.7s linear rotate 0.5s linear;
   /* background-color: aquamarine;
     transition: background-color 0.3s linear scale 0.5s ease; */
 }
 
 button:hover {
-  /* background-color: pink; */
-  scale: 0.9;
+  scale: 0.95;
   border-color: cyan;
-  rotate: 10deg;
+  /* rotate: 10deg; */
 }
-
-.duck-skin {
-  cursor: pointer;
-  transition: fill 0.2s ease-in-out;
-}
-
-.duck-skin:hover {
-  fill: rgb(255, 237, 76);
-}
-
-.duck-icon {
-  transition: scale 0.4s ease;
-  animation: bounce 5s linear infinite;
-}
-
-.duck-icon:hover {
-  scale: 1.1;
-}
-
-#box {
-  min-width: 120px;
-  min-height: 120px;
-  background-color: transparent;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 8px dashed hotpink;
-  animation-name: border-wheel;
-  /* animation-name: color-wheel; */
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-/* 
-  @keyframes color-wheel {
-    0% {
-      background-color: aqua;
-    }
-  
-    20% {
-      background-color: rgb(72, 238, 21);
-    }
-    40% {
-      background-color: rgb(255, 30, 30);
-    }
-    60% {
-      background-color: rgb(241, 46, 255);
-    }
-    80% {
-      background-color: rgb(29, 70, 255);
-    }
-    100% {
-      background-color: rgb(255, 234, 0);
-    }
-  } */
 
 #side-drawer {
-  position: fixed;
+  justify-content: left;
+  position: absolute;
+  /* z-index: -1; */
   top: 0;
   left: -200px;
   width: 200px;
@@ -127,5 +78,63 @@ button:hover {
 }
 
 #side-drawer ul > li {
-  padding: 10px;
+  padding: 30px;
 }
+
+#Home:hover {
+  background-color: black;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+#Contacts:hover {
+  background-color: black;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+#About-me:hover {
+  background-color: black;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+#Others:hover {
+  background-color: black;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.description {
+border: 1px dashed black;
+justify-content: center;
+margin-left: 500px;
+position:absolute;
+padding:200px;
+}
+/* .Arrows {
+  justify-content: center;
+  margin: 500px;
+  display: flex;
+} */
+
+/* .image-container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.image-container img.active {
+  display: block;
+}
+  
+
