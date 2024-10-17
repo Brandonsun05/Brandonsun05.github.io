@@ -18,7 +18,7 @@ function openDrawer() {
 }
 
 let currentIndex = 0;
-const images = document.querySelectorAll(".image-container img");
+const images = document.querySelectorAll(".image-container");
 
 function showNextImage() {
   // 移除当前图片的 active 类

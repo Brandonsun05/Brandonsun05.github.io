@@ -19,7 +19,7 @@ console.log(profileButton);
 
 const profileContent = document.querySelector("#profile-content");
 console.log(profileContent);
-profileButton.addEventListener("mouseover", toggleMenuOn);
+profileButton.addEventListener("click", toggleMenuOn);
 profileButton.addEventListener("mouseout", toggleMenuOff);
 
 function toggleMenuOn() {

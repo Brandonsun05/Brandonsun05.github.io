@@ -119,7 +119,7 @@ replayBtn.addEventListener("click", function () {
   video.currentTime = 0;
   video.play();
 });
-
+//--------------------------------------------------------------------------------------------------------------
 const drawerButton = document.querySelector("#drawer-button");
 const sideDrawer = document.querySelector("#side-drawer");
 console.log(sideDrawer);
