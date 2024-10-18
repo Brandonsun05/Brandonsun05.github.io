@@ -104,11 +104,27 @@ img:hover {
   cursor: pointer;
 }
 
-.description {
+.caption {
   border: 1px dashed black;
   justify-content: center;
   margin-left: 500px;
   position: absolute;
   bottom: 150px;
   width: 400px;
+  white-space: normal; /* 自动换行 */
+}
+
+/* 图片元素的基本样式 */
+#image {
+  transition: opacity 1s ease-in-out; /* 添加透明度变化动画 */
+  opacity: 1; /* 初始状态完全显示 */
+}
+
+/* 图片淡出时的动画效果 */
+.fade-out {
+  opacity: 0; /* 渐隐 */
+}
+
+.fade-in {
+  opacity: 1; /* 渐显 */
 }
