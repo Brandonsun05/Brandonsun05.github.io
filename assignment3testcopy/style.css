@@ -30,7 +30,7 @@ body {
   align-items: center;
   gap: 2rem;
   opacity: 1;
-  transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease;
+  /* transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease; */
 }
 /* .outer {
   border: 5px dashed black;
@@ -114,17 +114,25 @@ img:hover {
   white-space: normal; /* 自动换行 */
 }
 
-/* 图片元素的基本样式 */
 #image {
-  transition: opacity 1s ease-in-out; /* 添加透明度变化动画 */
-  opacity: 1; /* 初始状态完全显示 */
+  animation: fadeIn 1s ease-in-out forwards; /* 图片初始状态是淡入 */
 }
 
-/* 图片淡出时的动画效果 */
-.fade-out {
-  opacity: 0; /* 渐隐 */
+/* 定义淡入淡出的动画 */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
-.fade-in {
-  opacity: 1; /* 渐显 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
