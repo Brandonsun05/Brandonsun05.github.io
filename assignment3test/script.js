@@ -16,22 +16,15 @@ function openDrawer() {
     isOpen = false;
   }
 }
-
+const images = ["cloud.png", "ocean.JPG"];
 let currentIndex = 0;
-const images = document.querySelectorAll(".image-container");
 
-function showNextImage() {
-  // 移除当前图片的 active 类
-  images[currentIndex].classList.remove("active");
+// 获取图片元素
+const imgElement = document.getElementById("cloud.png");
 
-  // 更新索引
+// 添加点击事件监听器
+imgElement.addEventListener("click", function () {
+  // 更新索引，切换到下一张图片，循环回到第一张
   currentIndex = (currentIndex + 1) % images.length;
-
-  // 为新的图片添加 active 类
-  images[currentIndex].classList.add("active");
-}
-
-// 添加点击事件
-document
-  .querySelector(".image-container")
-  .addEventListener("click", showNextImage);
+  imgElement.src = images[currentIndex];
+});
