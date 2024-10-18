@@ -20,7 +20,7 @@ const images = ["cloud.png", "ocean.JPG"];
 let currentIndex = 0;
 
 // 获取图片元素
-const imgElement = document.querySelector("cloud.png");
+const imgElement = document.getElementById("image");
 console.log("cloud");
 
 // 添加点击事件监听器
