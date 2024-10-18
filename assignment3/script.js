@@ -1,3 +1,7 @@
+// Most of the work is done here using querySelector and getElementById. I selected the images in the repository, which also makes it easier for me to add more photos in the future. I added the photo format in JavaScript. In JavaScript, ImgIndex is updated to display the next image array when the user clicks on the image, and the caption element also changes correspondingly.
+// I chose this design to give the user a sense of anticipation when switching between photos, making the click interaction more engaging and meaningful to bring a sense of excitement when displaying a new picture as feedback. This context is more useful than the previous in providing a platform to display my works as an artist and designer in developing interactive media.
+// Browsing through similar portfolio websites, many choose to display all works upfront all at once. I think not only that make the browsing experience boring due to the lack of interaction and animation, it also takes away any excitement of discovering a new work.
+
 const drawerButton = document.querySelector("#drawer-button");
 const sideDrawer = document.querySelector("#side-drawer");
 console.log(sideDrawer);
@@ -7,12 +11,10 @@ drawerButton.addEventListener("click", openDrawer);
 function openDrawer() {
   console.log("i am clicked");
   if (!isOpen) {
-    // sideDrawer.style.transform = `translateX(200px)`;
     sideDrawer.style.translate = "200px";
     isOpen = true;
   } else {
     sideDrawer.style.translate = "-200px";
-    // sideDrawer.style.transform = `translateX(-200px)`;
     isOpen = false;
   }
 }
@@ -40,43 +42,25 @@ const images = [
     caption:
       "Title: Sunflower\nAuthor: Brandon Sun\nMedium: Digital 3D art\nDate: September 2024\nDescription: Expanding on the exploration of digital life, this work conveys a similar idea but showcases my experimentation with 3D art mediums",
   },
-
-  // { src: "image3.jpg", caption: "这是图片3的文字描述" },
 ];
 const imgElement = document.getElementById("image");
 const captionElement = document.getElementById("caption");
 //--------------------------------------------------
 
-// const images = ["cloud.png", "ocean.JPG"];
-let currentIndex = 0;
-console.log("current index");
-
-// 获取图片元素
-// const imgElement = document.getElementById("image");
-// console.log("cloud");
-
-// 添加点击事件监听器
-// imgElement.addEventListener("click", function () {
-//   // 更新索引，切换到下一张图片，循环回到第一张
-//   currentIndex = (currentIndex + 1) % images.length;
-//   imgElement.src = images[currentIndex];
-// });
+let ImgIndex = 0;
+console.log("index");
 
 //--------------------------------------------------
 
 imgElement.addEventListener("click", function () {
-  // 图片淡出效果
   imgElement.style.animation = "fadeOut 1s ease-in-out";
 
-  // 在淡出动画完成后切换图片和文字
   setTimeout(function () {
-    currentIndex = (currentIndex + 1) % images.length;
+    ImgIndex = (ImgIndex + 1) % images.length;
 
-    // 更新图片 src 和文字
-    imgElement.src = images[currentIndex].src;
-    captionElement.textContent = images[currentIndex].caption;
+    imgElement.src = images[ImgIndex].src;
+    captionElement.textContent = images[ImgIndex].caption;
 
-    // 切换到新的图片后触发淡入动画
     imgElement.style.animation = "fadeIn 1s ease-in-out";
-  }, 1000); // 1秒与CSS动画同步
+  }, 1000);
 });

@@ -1,7 +1,10 @@
-/* https://colorhunt.co/palette/1a120b3c2a21d5cea3e5e5cb */
+/* In CSS, in addition to the standard styling, I wrote a custom animation for fade-in and out that is used for the photo transitions. I also used a transition, ease-in-out, for the side drawer to make this function appear smooth.
+I also animated the drawer menu to provide visual feedback when the user hovers. CSS displays the interactive elements and interaction feedback as this is only a partial website.
+I encountered a problem while animating the side-drawer. I want the drawer to be on the top left corner so that it feels intuitive for the drawer to slide out from the left, but while animating, the drawer would cover the drawer button once it slides out. To fix this, I researched W3 Schools regarding z-index. By setting different index values for the button and drawer, I was able to achieve this interaction by overlaying the button on top of the drawer.
+https://www.w3schools.com/cssref/pr_pos_z-index.php */
 
 body {
-  background-color: rgb(33, 51, 59);
+  background-color: #2d3250;
   display: flex;
   text-align: center;
   margin: 60px;
@@ -20,7 +23,7 @@ body {
 .outer {
   margin-left: 500px;
   position: absolute;
-  border: 2px dashed #e5e5cb7a;
+  border: 3px dashed #f6b17a;
   width: 400px;
   min-height: 200px;
   padding: 10px;
@@ -30,13 +33,7 @@ body {
   align-items: center;
   gap: 2rem;
   opacity: 1;
-  /* transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease; */
 }
-/* .outer {
-  border: 5px dashed black;
-  align-items: baseline;
-  width: 200px;
-} */
 
 #drawer-button {
   padding: 10px 30px;
@@ -45,36 +42,31 @@ body {
   cursor: pointer;
   justify-content: left;
   background-color: transparent;
-  border-color: coral;
+  border-color: #f6b17a;
   color: #e5e5cb;
   position: absolute;
   z-index: 1;
   transition: border-color 0.8s ease scale 0.7s linear rotate 0.5s linear;
-  /* background-color: aquamarine;
-    transition: background-color 0.3s linear scale 0.5s ease; */
 }
 
 button:hover {
   scale: 0.95;
   border-color: cyan;
-  /* rotate: 10deg; */
 }
 
 #side-drawer {
   justify-content: left;
   position: absolute;
-  /* z-index: -1; */
   top: 0;
   left: -200px;
   width: 200px;
   min-height: 100vh;
-  /* transition: transform 0.5s ease-in-out; */
   transition: translate 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  border-right: 2px dashed #e5e5cb7a;
+  border-right: 3px dashed #f6b17a;
 }
 
 #side-drawer ul > li {
@@ -105,20 +97,19 @@ img:hover {
 }
 
 .caption {
-  border: 1px dashed black;
+  border: 3px dashed #f6b17a;
   justify-content: center;
   margin-left: 500px;
   position: absolute;
   bottom: 150px;
   width: 400px;
-  white-space: normal; /* 自动换行 */
+  white-space: normal;
 }
 
 #image {
-  animation: fadeIn 1s ease-in-out forwards; /* 图片初始状态是淡入 */
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
-/* 定义淡入淡出的动画 */
 @keyframes fadeOut {
   from {
     opacity: 1;
