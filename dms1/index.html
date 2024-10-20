@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Icon Template Square</title>
+    <style>
+      .row {
+        width: 720px;
+        margin: 10px auto 10px auto;
+      }
+      .image-container {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 10px;
+      }
+      .row {
+        margin-top: 40px;
+      }
+      .left-column {
+        float: left;
+        width: 30%;
+        margin-left: 30px;
+      }
+      .center-column {
+        width: 30%;
+        margin: auto;
+      }
+      .right-column {
+        float: right;
+        width: 30%;
+        margin: auto;
+      }
+      .image-container {
+        display: table-cell;
+        vertical-align: middle;
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: rgb(109, 105, 136)">
+    <div class="row">
+      <div class="image-container">
+        <img id="cup" src="img/Asset 1.png" height="200" width="200" />
+      </div>
+      <div class="image-container">
+        <img id="cloud" src="img/Asset 2.png" height="200" width="200" />
+      </div>
+      <div class="image-container">
+        <img id="planet" src="img/Asset 3.png" height="200" width="200" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="image-container">
+        <img id="pillow" src="img/Asset 4.png" height="200" width="200" />
+      </div>
+      <div class="image-container">
+        <img id="lamp" src="img/Asset 5.png" height="200" width="200" />
+      </div>
+      <div class="image-container">
+        <img id="clock" src="img/Asset 6.png" height="200" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="image-container">
+        <img id="bed" src="img/Asset 7.png" height="200" width="200" />
+      </div>
+      <div class="image-container">
+        <img id="sleep" src="img/Asset 8.png" height="200" width="200" />
+      </div>
+      <div class="image-container">
+        <img id="pill" src="img/Asset 9.png" height="200" width="200" />
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.2/buzz.min.js"></script>
+
+    <script type="module">
+      const sound1 = new buzz.sound("audio/icon food.wav");
+      const sound2 = new buzz.sound("audio/icon fantasy.wav");
+      const sound3 = new buzz.sound("audio/icon sky.wav");
+      const sound4 = new buzz.sound("audio/icon pillow.wav");
+      const sound5 = new buzz.sound("audio/icon light.wav");
+      const sound6 = new buzz.sound("audio/icon clock.wav");
+      const sound7 = new buzz.sound("audio/icon bed.wav");
+      const sound8 = new buzz.sound("audio/icon sleep.wav");
+      const sound9 = new buzz.sound("audio/icon pills.wav");
+
+      // interaction for cup
+      const cup = document.getElementById("cup");
+      cup.onpointerdown = () => {
+        audioCheck();
+        cup.src = "img/Asset 1 after.png"; // change image
+        sound1.play();
+      };
+      cup.onpointerup = () => (cup.src = "img/Asset 1.png");
+
+      // interaction for cloud
+      const cloud = document.getElementById("cloud");
+      cloud.onpointerdown = () => {
+        audioCheck();
+        cloud.src = "img/Asset 2 after.png"; // change image
+        sound2.play();
+      };
+      cloud.onpointerup = () => (cloud.src = "img/Asset 2.png");
+
+      // interaction for planet
+      const planet = document.getElementById("planet");
+      planet.onpointerdown = () => {
+        audioCheck();
+        planet.src = "img/Asset 3 after.png"; // change image
+        sound3.play();
+      };
+      planet.onpointerup = () => (planet.src = "img/Asset 3.png");
+
+      // interaction for pillow
+      const pillow = document.getElementById("pillow");
+      pillow.onpointerdown = () => {
+        audioCheck();
+        pillow.src = `img/Asset 4 after.png`;
+        sound4.play();
+      };
+      pillow.onpointerup = () => (pillow.src = `img/Asset 4.png`);
+
+      // interaction for light
+      const lamp = document.getElementById("lamp");
+      lamp.onpointerdown = () => {
+        audioCheck();
+        lamp.src = `img/Asset 5 after.png`;
+        sound5.play();
+      };
+      lamp.onpointerup = () => (lamp.src = `img/Asset 5.png`);
+
+      // interaction for clock
+      const clock = document.getElementById("clock");
+      clock.onpointerdown = () => {
+        audioCheck();
+        clock.src = `img/Asset 6 after.png`;
+        sound6.play();
+      };
+      clock.onpointerup = () => (clock.src = `img/Asset 6.png`);
+
+      // interaction for bed
+      const bed = document.getElementById("bed");
+      bed.onpointerdown = () => {
+        audioCheck();
+        bed.src = `img/Asset 7 after.png`;
+        sound7.play();
+      };
+      bed.onpointerup = () => (bed.src = `img/Asset 7.png`);
+
+      // interaction for sleep
+      const sleep = document.getElementById("sleep");
+      sleep.onpointerdown = () => {
+        audioCheck();
+        sleep.src = `img/Asset 8 after.png`;
+        sound8.play();
+      };
+      sleep.onpointerup = () => (sleep.src = `img/Asset 8.png`);
+
+      // interaction for pill
+      const pill = document.getElementById("pill");
+      pill.onpointerdown = () => {
+        audioCheck();
+        pill.src = `img/Asset 9 after.png`;
+        sound9.play();
+      };
+      pill.onpointerup = () => (pill.src = `img/Asset 9.png`);
+
+      function audioCheck() {
+        if (buzz.audioCtx.state != "running") {
+          buzz.audioCtx.resume();
+          console.log(`audio has been resumed!`);
+        }
+        console.log(`audio has been checked!`);
+      }
+    </script>
+  </body>
+</html>
