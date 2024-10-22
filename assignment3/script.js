@@ -1,6 +1,6 @@
 // Most of the work is done here using querySelector and getElementById. I selected the images in the repository, which also makes it easier for me to add more photos in the future. I added the photo format in JavaScript. In JavaScript, ImgIndex is updated to display the next image array when the user clicks on the image, and the caption element also changes correspondingly.
 // I chose this design to give the user a sense of anticipation when switching between photos, making the click interaction more engaging and meaningful to bring a sense of excitement when displaying a new picture as feedback. This context is more useful than the previous in providing a platform to display my works as an artist and designer in developing interactive media.
-// Browsing through similar portfolio websites, many choose to display all works upfront all at once. I think not only that make the browsing experience boring due to the lack of interaction and animation, it also takes away any excitement of discovering a new work.
+// Based on feedback, I added a directory to display all photos as thumbnails so that when the user would like to view a specific photo, they can click on it to view it. This is achieved similarly to the switching photo section, which is done by updating the index to display the correct photo.
 
 const drawerButton = document.querySelector("#drawer-button");
 const sideDrawer = document.querySelector("#side-drawer");
@@ -66,17 +66,12 @@ imgElement.addEventListener("click", function () {
 });
 
 const thumbnailElements = document.querySelectorAll(".thumbnail");
-// 绑定缩略图点击事件
-thumbnailElements.forEach((thumb, index) => {
-  thumb.addEventListener("click", () => {
-    // 当用户点击目录中的图片时，切换到相应的图片
+
+thumbnailElements.forEach((thumbnail, index) => {
+  thumbnail.addEventListener("click", () => {
     currentIndex = index;
 
-    // 更新中间的大图片和文字描述
     imgElement.src = images[currentIndex].src;
     captionElement.textContent = images[currentIndex].caption;
-
-    // 切换到新图片时触发淡入动画
-    imgElement.style.animation = "fadeIn 1s ease-in-out";
   });
 });
