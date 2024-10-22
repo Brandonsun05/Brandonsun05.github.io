@@ -65,9 +65,9 @@ imgElement.addEventListener("click", function () {
   }, 1000);
 });
 
-const thumbElements = document.querySelectorAll(".thumbnail");
+const thumbnailElements = document.querySelectorAll(".thumbnail");
 // 绑定缩略图点击事件
-thumbElements.forEach((thumb, index) => {
+thumbnailElements.forEach((thumb, index) => {
   thumb.addEventListener("click", () => {
     // 当用户点击目录中的图片时，切换到相应的图片
     currentIndex = index;
