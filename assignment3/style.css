@@ -21,11 +21,11 @@ body {
 }
 
 .outer {
-  margin-left: 500px;
+  margin-left: 400px;
   position: absolute;
-  border: 3px dashed #f6b17a;
-  width: 400px;
-  min-height: 200px;
+  border: 1px dashed #f6b17a;
+  width: 600px;
+  /* min-height: 200px; */
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -97,12 +97,12 @@ img:hover {
 }
 
 .caption {
-  border: 3px dashed #f6b17a;
+  border: 1px dashed #f6b17a;
   justify-content: center;
-  margin-left: 500px;
+  margin-left: 400px;
   position: absolute;
-  bottom: 150px;
-  width: 400px;
+  bottom: 100px;
+  width: 600px;
   white-space: normal;
 }
 
