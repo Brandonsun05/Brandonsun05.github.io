@@ -46,7 +46,8 @@ body {
   color: #e5e5cb;
   position: absolute;
   z-index: 1;
-  transition: border-color 0.8s ease scale 0.7s linear rotate 0.5s linear;
+  transition: border-color 0.8s ease scale 0.7s linear;
+  transition: transform 1s ease;
 }
 
 button:hover {
