@@ -40,7 +40,7 @@ const images = [
   {
     src: "digital sunflower.jpg",
     caption:
-      "Title: Sunflower\nAuthor: Brandon Sun\nMedium: Digital 3D art\nDate: September 2024\nDescription: Expanding on the exploration of digital life, this work conveys a similar idea but showcases my experimentation with 3D art mediums",
+      "Title: Digital Sunflower\nAuthor: Brandon Sun\nMedium: Digital 3D art\nDate: September 2024\nDescription: Expanding on the exploration of digital life, this work conveys a similar idea but showcases my experimentation with 3D art mediums",
   },
 ];
 const imgElement = document.getElementById("image");
@@ -63,4 +63,20 @@ imgElement.addEventListener("click", function () {
 
     imgElement.style.animation = "fadeIn 1s ease-in-out";
   }, 1000);
+});
+
+const thumbElements = document.querySelectorAll(".thumbnail");
+// 绑定缩略图点击事件
+thumbElements.forEach((thumb, index) => {
+  thumb.addEventListener("click", () => {
+    // 当用户点击目录中的图片时，切换到相应的图片
+    currentIndex = index;
+
+    // 更新中间的大图片和文字描述
+    imgElement.src = images[currentIndex].src;
+    captionElement.textContent = images[currentIndex].caption;
+
+    // 切换到新图片时触发淡入动画
+    imgElement.style.animation = "fadeIn 1s ease-in-out";
+  });
 });
