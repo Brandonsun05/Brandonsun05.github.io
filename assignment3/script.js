@@ -1,6 +1,6 @@
 // Most of the work is done here using querySelector and getElementById. I selected the images in the repository, which also makes it easier for me to add more photos in the future. I added the photo format in JavaScript. In JavaScript, ImgIndex is updated to display the next image array when the user clicks on the image, and the caption element also changes correspondingly.
 // I chose this design to give the user a sense of anticipation when switching between photos, making the click interaction more engaging and meaningful to bring a sense of excitement when displaying a new picture as feedback. This context is more useful than the previous in providing a platform to display my works as an artist and designer in developing interactive media.
-// Based on feedback, I added a directory to display all photos as thumbnails so that when the user would like to view a specific photo, they can click on it to view it. This is achieved similarly to the switching photo section, which is done by updating the index to display the correct photo.
+// Based on feedback, I added a directory to display all photos as thumbnails so that when the user would like to view a specific photo, they can click on it to view it. This is achieved similarly to the switching photo section, which is done by updating the index to display the correct photo, with animation in CSS for visual feedback.
 
 const drawerButton = document.querySelector("#drawer-button");
 const sideDrawer = document.querySelector("#side-drawer");
